@@ -2,37 +2,94 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #fbfbfb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.canvas {
+  height: 10000px;
+  width: 1000px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  color: #DCC48E;
 }
+h2{
+  color: #DCC48E;
+}
+
+p{
+  color: #B3C0A4;
+  font-size: 18px;
+}
+body {
+  background-color: #505168;
+}
+
+.row {
+  height:100vh;
+  display: flex; 
+  justify-content: center;
+  flex-direction: row;
+  background-color:#27233A ;
+}
+
+.row #left {
+   /** Just to emphasize vertical split visually. You can remove this */
+   position: relative;
+   width: 50%;
+   height: 100%;
+   justify-content: center;
+
+   transform: translate(0%, -10%);
+}
+
+
+.row #right {
+    /** Just to emphasize vertical split visually. You can remove this */
+   flex: 1;
+   height:50%;
+   top: 50%;
+    
+  left: 50%;
+  
+  max-width: 800px;
+  transform: translate(-10%, 50%);
+
+  margin: 0;
+}
+
+.projects {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90vh;
+  justify-content: center;
+  padding-top: 10px;
+  --control-button-background: transparent;
+
+
+}
+.styles {
+
+  --slider-height-percentage: 60%;
+  --slider-transition-duration: 575ms;
+  --organic-arrow-thickness: 4px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 40px;
+  --organic-arrow-color: #6a6a6a;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #6a6a6a;
+  --control-bullet-active-color: #6a6a6a;
+  --loader-bar-color: #851515;
+  --loader-bar-height: 6px;
+  }
